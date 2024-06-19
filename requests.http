@@ -1,0 +1,31 @@
+GET http://localhost:3300/users HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://localhost:3300/users/:id HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:3300/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Marco",
+  "email": "devm4rco2@gmail.com",
+  "password": "teste"
+}
+
+###
+
+PUT http://localhost:3300/users/:id HTTP/1.1
+Content-Type: application/json
+
+{
+  "password": "teste123"
+}
+
+###
+
+DELETE http://localhost:3300/users/:id HTTP/1.1
